@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char S[]="python",temp;
+    int i,j;
+    for(i=0;S[i]!='\0';i++){}
+    i=i-1;
+    for(j=0;j<i;j++,i--){
+        temp=S[j];
+        S[j]=S[i];
+        S[i]=temp;
+    }
+for(i=0;S[i]!='\0';i++)
+cout<<S[i];
+}
