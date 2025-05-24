@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int word=1;
+    char s[]="hello how are you";
+    for(int i=1;s[i]!='\0';i++){
+        if(s[i]==' ' && s[i-1]!=' '){
+word++;
+        }
+    }
+    cout<<"no of words: "<<word;
+
+}
