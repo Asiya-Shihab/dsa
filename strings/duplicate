@@ -1,0 +1,15 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    char A[]="finding";
+    vector<int>H(26,0);
+    int i;
+    for(i=0;A[i]!='\0';i++){
+        H[A[i]-97]++;
+    }
+    for(i=0;i<26;i++){
+        if(H[i]>1)
+        cout<<"element "<<(char)(i+97) <<" repeats "<<H[i]<<" times "<<endl; 
+    }
+}
