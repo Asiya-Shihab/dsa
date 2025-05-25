@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char S[]="findings";
+    long int x=0,h=0;
+    int i;
+    for(i=0;S[i]!='\0';i++){
+        x=1;
+        x=x<<(S[i]-97);
+        if(x&h>0)
+        cout<<"duplicate element : "<<S[i];
+        else
+        h=h|x;
+    }
+}
