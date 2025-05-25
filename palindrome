@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char A[]="malayalam";
+    int i,j;
+    for(i=0;A[i]!='\0';i++){
+
+    }
+    i=i-1;
+    for(j=0;j<i;i--,j++){
+        if(A[i]!=A[j])
+        break;
+
+
+    }
+    if(A[i]==A[j])
+    cout<<"palindrome";
+    else cout<<"not palindrome";
+}
