@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+void swap(char &l,char &h){
+char temp=h;
+h=l;
+l=temp;
+    
+
+}
+void perm(char s[],int l,int h){
+    int i;
+    if(l==h){
+    for(i=0;s[i]!='\0';i++)
+    cout<<s[i];
+cout<<endl;}
+    else{
+        for(i=l;i<=h;i++)
+        {
+            swap(s[l],s[i]);
+            perm(s,l+1,h);
+            swap(s[l],s[i]);
+        }
+    }
+    
+}
+int main(){
+    char s[]="ABC";
+    perm(s,0,2);
+}
