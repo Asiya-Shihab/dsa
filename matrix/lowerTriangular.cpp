@@ -7,11 +7,11 @@ class Lower{
     public:
     Lower(){
         n=2;
-        A=new int[2];
+        A=new int[2*(2+1)/2];
     }
     Lower(int n){
         this->n=n;
-        A=new int[n];
+        A=new int[n*(n+1)/2];
     }
     void set(int i,int j,int x);
     int get(int i,int j);
