@@ -33,9 +33,9 @@ int Lower::get(int i,int j){
     return 0;
 }
 void Lower::display(){
-    for(int i=0;i<n;i++)
+    for(int i=1;i<=n;i++)
     {
-        for(int j=0;j<n;j++){
+        for(int j=1;j<=n;j++){
             if(i>=j)
         cout<<get(i,j)<<" ";
         else cout<<"0 ";
@@ -50,8 +50,8 @@ cout<<"enter the dimension ";
 cin>>n;
         Lower triangle(n);
     cout<<"enter all the elements ";
-    for(int i=0;i<n;i++){
-        for(int j=0;j<n;j++){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
             cin>>x;
             triangle.set(i,j,x);
         }
