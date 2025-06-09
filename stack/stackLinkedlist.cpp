@@ -8,11 +8,11 @@ void push(int x){
     Node * t=new Node;
     if(t==NULL)
     cout<<"stack overflow ";
-    else 
+    else{ 
     t->data=x;
     t->next=top;
     top=t;
-}
+}}
 int pop(){
     Node * p;
     int x=-1;
